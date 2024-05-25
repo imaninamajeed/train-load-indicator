@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-
 const NavBar = () => {
 	return (
 		<nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 			<div className="container">
-				<a className="navbar-brand" href="#">
+				<Link className="navbar-brand" to="/">
 					CDA: TRAIN LOAD INDICATOR
-				</a>
+				</Link>
 				<button
 					className="navbar-toggler"
 					type="button"
@@ -25,14 +24,14 @@ const NavBar = () => {
 					id="navbarNav">
 					<ul className="navbar-nav nav-tabs">
 						<li className="nav-item">
-							<a className="nav-link active text-bold" href="/">
+							<Link className="nav-link active text-bold" to="/">
 								Train Load View
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link" href="/dashboard">
+							<Link className="nav-link" to="/dashboard">
 								Dashboard
-							</a>
+							</Link>
 						</li>
 						<li className="nav-item">
 							<Link
