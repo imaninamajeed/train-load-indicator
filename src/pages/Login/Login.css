@@ -1,3 +1,4 @@
+/* General Styles */
 .login-container {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,7 @@
     justify-content: center;
     height: 100vh;
     background-color: #0097B2;
+    font-family: Arial, sans-serif;
 }
 
 .login-box {
@@ -18,20 +20,20 @@
 }
 
 .login-logo img {
-    width: 400px;
+    width: 300px;
     height: 300px;
     border-bottom: 10px solid #0097B2;
 }
 
-
+/* Form Styles */
 .login-box h2 {
     font-size: 30px;
     color: #0097B2;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
 }
 
 .login-box form {
-    margin: 5px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -70,4 +72,5 @@
 .login-box button:hover {
     color: #0097B2;
     border: 1px solid #0097B2;    
-    background-color: #ffffff;}
+    background-color: #ffffff;
+}
