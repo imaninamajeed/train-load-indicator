@@ -1,0 +1,13 @@
+/* CSS Variables */
+:root {
+    --footer-padding: 2rem 0;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    padding: var(--footer-padding);
+    font-family: var(--font-primary);
+    background-color: #0097B2;
+    text-align: center;
+}

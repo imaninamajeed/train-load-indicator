@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import logo from "./logo.png";
+import logo from "../../assets/images/logo.png";
+
 
 const Login = () => {
 	const [username, setUsername] = useState("");
@@ -27,7 +28,7 @@ const Login = () => {
 		<div className="login-container">
 			<div className="login-box">
 				<div className="login-logo">
-					<img src={logo} alt="Logo" height={900} width={1600} />
+					<img src={logo} alt="Logo" />
 				</div>
 				<form onSubmit={handleLogin}>
 					<h2>Login</h2>

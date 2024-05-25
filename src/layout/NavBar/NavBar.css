@@ -1,0 +1,26 @@
+/* Variables */
+:root {
+    --navbar-padding: 1rem 0;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+/* Navbar styles */
+nav.navbar {
+    padding: var(--navbar-padding);
+    background-color: #f8f9fa;
+    font-family: var(--font-primary);
+}
+
+a.navbar-brand {
+    font-size: 1.5rem;
+    color: #0097B2;
+}
+
+a.navbar-brand:hover {
+    color: gray;
+}
+
+ul.navbar-nav a.nav-link {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
