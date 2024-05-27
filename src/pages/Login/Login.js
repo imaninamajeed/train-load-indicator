@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import logo from "../../assets/images/logo.png";
 
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000"; // Example of accessing environment variable in your React application
 
 const Login = () => {
 	const [username, setUsername] = useState("");
@@ -21,7 +22,7 @@ const Login = () => {
 	const handleLogin = async (event) => {
 		event.preventDefault();
 		try {
-			const response = await axios.post("http://localhost:5000/login", {
+			const response = await axios.post(`${apiUrl}/login`, {
 				username,
 				password,
 			});
