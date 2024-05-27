@@ -38,7 +38,6 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 							<Link
 								to="/login"
 								className="nav-link"
