@@ -6,6 +6,7 @@ const NavBar = () => {
 	return (
 		<nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
 			<div className="container">
+				{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 				<Link className="navbar-brand" to="/">
 					CDA: TRAIN LOAD INDICATOR
 				</Link>
@@ -26,6 +27,7 @@ const NavBar = () => {
 				>
 					<ul className="navbar-nav nav-tabs">
 						<li className="nav-item">
+							{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 							<Link className="nav-link active text-bold" to="/">
 								Train Load View
 							</Link>
