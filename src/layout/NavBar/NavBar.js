@@ -16,12 +16,14 @@ const NavBar = () => {
 					data-target="#navbarNav"
 					aria-controls="navbarNav"
 					aria-expanded="false"
-					aria-label="Toggle navigation">
+					aria-label="Toggle navigation"
+				>
 					<span className="navbar-toggler-icon"></span>
 				</button>
 				<div
 					className="collapse navbar-collapse justify-content-end"
-					id="navbarNav">
+					id="navbarNav"
+				>
 					<ul className="navbar-nav nav-tabs">
 						<li className="nav-item">
 							<Link className="nav-link active text-bold" to="/">
@@ -34,10 +36,12 @@ const NavBar = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
+							{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 							<Link
 								to="/login"
 								className="nav-link"
-								onClick={() => localStorage.removeItem("token")}>
+								onClick={() => localStorage.removeItem("token")}
+							>
 								Logout
 							</Link>
 						</li>
