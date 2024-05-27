@@ -10,8 +10,16 @@ const Login = () => {
 	const [password, setPassword] = useState("");
 	const navigate = useNavigate();
 
-	const handleLogin = async (e) => {
-		e.preventDefault();
+	const handleUsernameChange = (event) => {
+		setUsername(event.target.value);
+	};
+
+	const handlePasswordChange = (event) => {
+		setPassword(event.target.value);
+	};
+
+	const handleLogin = async (event) => {
+		event.preventDefault();
 		try {
 			const response = await axios.post("http://localhost:5000/login", {
 				username,
@@ -32,20 +40,24 @@ const Login = () => {
 				</div>
 				<form onSubmit={handleLogin}>
 					<h2>Login</h2>
-					<div>
-						<label>Username</label>
+					<div className="form-group">
+						<label htmlFor="username">Username:</label>
 						<input
 							type="text"
+							id="username"
 							value={username}
-							onChange={(e) => setUsername(e.target.value)}
+							onChange={handleUsernameChange}
+							required
 						/>
 					</div>
-					<div>
-						<label>Password</label>
+					<div className="form-group">
+						<label htmlFor="password">Password:</label>
 						<input
 							type="password"
+							id="password"
 							value={password}
-							onChange={(e) => setPassword(e.target.value)}
+							onChange={handlePasswordChange}
+							required
 						/>
 					</div>
 					<button type="submit">Login</button>
